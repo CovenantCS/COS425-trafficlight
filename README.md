@@ -7,8 +7,10 @@ Problem description
 In this project we will model traffic signals at a single intersection of two, two-way, roads.  To regulate traffic in four directions we will need four coordinated signals.  For simplicity we will refer to these as: North, South, East, and West.  The basic version of each signal will have three lights – red, yellow, green.
 
 Simulate the traffic light using a python GUI that looks something like:
+Inline-style: 
+![alt text](https://github.com/CovenantCS/COS425-trafficlight/blob/master/image001.png "Trafficlight image")
 
-As a starting point use this codePreview the documentView in a new window.
+As a starting point use the trafficlight.py code in this repository.
 
 We will work through several scenarios: American Basic, American Left Arrow, European Basic, and European Left Arrow.  Each will be defined in detail.  We will assume that the system will be driven from state to state purely by a timer.  The timer will provide an event every 5 seconds.  Therefore, each state will be a choice of which lights to put on for a 5 second interval. The traffic signal will run in an infinite loop, such that if it is in the last state defined and receives a timer event it will go to the first state defined.
 
